@@ -10,3 +10,7 @@
 ![alt text](https://github.com/surbhiz/JS-30Days/blob//master/Day3/blurimage.png?raw=true)
 * This webpage is designed using HTML,CSS, JavaScript.
 * The range bar can change the border width of the image and the blur can filter the image making it completely blur. It has color picker which can change the color of the border by choosing any color of our choice.
+# All about Animal in flex- Day 4
+![alt text](https://github.com/surbhiz/JS-30Days/blob//master/Day4/flex.png?raw=true)
+* This webpage is designed using HTML,CSS, JavaScript.
+* When you click on particular flex its shows the information of particular animal ans is arranged in flex.
