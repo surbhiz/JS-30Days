@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All about Animals</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+  <div class="panels">
+    <div class="panel panel1">
+      <p>Carnivorous</p>
+      <p>Cheetah</p>
+      <p>Speed: 50-80 mph</p>
+    </div>
+    <div class="panel panel2">
+      <p>Carnivorous</p>
+      <p>Tiger</p>
+      <p>Speed: 30-40 mph</p>
+    </div>
+    <div class="panel panel3">
+      <p>Herbivorous</p>
+      <p>Elephant</p>
+      <p>Speed: 25mph</p>
+    </div>
+    <div class="panel panel4">
+      <p>Carnivorous</p>
+      <p>Lion</p>
+      <p>Speed: 50 mph</p>
+    </div>
+    <div class="panel panel5">
+      <p>Herbivorous</p>
+      <p>Zebra</p>
+      <p>Speed: 40 mph</p>
+    </div>
+  </div>
+
+  <script>
+const panels = document.querySelectorAll('.panel');
+
+function toggleOpen() {
+  console.log('Hello');
+  this.classList.toggle('open');
+}
+
+function toggleActive(e) {
+  console.log(e.propertyName);
+  if (e.propertyName.includes('flex')) {
+    this.classList.toggle('open-active');
+  }
+}
+
+panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+  </script>
+
+
+
+</body>
+</html>
